@@ -32,7 +32,7 @@ class SongsController < ApplicationController
 
   patch '/songs/:slug' do
     @song = Song.find_by_slug(params[:slug])
-    binding.pry
+    
     @song.artist.name = params[:artist_name]
     @song.artist.save
 
