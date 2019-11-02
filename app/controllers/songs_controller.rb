@@ -36,6 +36,9 @@ class SongsController < ApplicationController
     @song.artist.name = params[:artist_name]
     @song.artist.save
 
+    @song.genre_ids = params[:genres]
+    @song.save
+
     binding.pry
     flash[:message] = "Successfully updated song."
     redirect("/songs/#{@song.slug}")
