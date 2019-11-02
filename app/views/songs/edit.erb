@@ -4,9 +4,9 @@
 
   <form action="/songs/<%= @song.slug %>" method="POST">
     <input id="hidden" type="hidden" name="_method" value="patch">
-    <label>Edit the Pet's Name:</label>
+    <label>Edit Artist Name:</label>
     <br>
-    <input type="text" name="pet_name" value="<%= @pet.name %>">
+    <input type="text" name="artist_name" value="<%= @artist.name %>">
 
     <br>
     <p>Select an existing pet or create a new one below.</p>
